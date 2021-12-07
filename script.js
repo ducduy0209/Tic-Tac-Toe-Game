@@ -1,14 +1,15 @@
-//I've tried to explain each JavaScript line with comments....Hope you'll understand
+const $ = document.querySelector.bind(document);
+const $$ = document.querySelectorAll.bind(document);
 
 //selecting all required elements
-const selectBox = document.querySelector(".select-box"),
-    selectBtnX = selectBox.querySelector(".options .playerX"),
-    selectBtnO = selectBox.querySelector(".options .playerO"),
-    playBoard = document.querySelector(".play-board"),
-    players = document.querySelector(".players"),
-    allBox = document.querySelectorAll("section span"),
-    resultBox = document.querySelector(".result-box"),
-    wonText = resultBox.querySelector(".won-text"),
+const selectBox = $(".select-box"),
+    selectBtnX = $(".options .playerX"),
+    selectBtnO = $(".options .playerO"),
+    playBoard = $(".play-board"),
+    players = $(".players"),
+    allBox = $$("section span"),
+    resultBox = $(".result-box"),
+    wonText = $(".won-text"),
     replayBtn = resultBox.querySelector("button");
 
 window.onload = () => { //once window loaded
